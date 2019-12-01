@@ -127,8 +127,10 @@ nav:hover ~ .navButton {
 }
 
 .places {
+  margin-top: 25px;
   padding-top: 25px;
   padding-bottom: 55px;
+  margin-bottom: 25px
 }
 
 .tequadoPlace a {
