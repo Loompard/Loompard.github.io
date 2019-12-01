@@ -1,0 +1,248 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 15px;
+  height: 100%;
+  overflow: hidden;
+
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+main {
+  width: 92%;
+  color: black;
+  background: white;
+  z-index: 1;
+  /*transform: translateX(-3%);*/
+  padding-right: 3%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  height: 100%;
+}
+
+main h1 {
+  text-transform: uppercase;
+  font-size: 56px;
+  text-decoration: none;
+  color: white;
+  filter: drop-shadow(0px 0px 15px black);
+}
+
+.navButton {
+  width: 100px;
+  margin-bottom: 55px;
+  padding-left: 10px;
+}
+
+.navButton a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuButton {
+  width: 35px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
+  background: none;
+  cursor: pointer;
+}
+
+nav:hover {
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+  z-index: -5;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+nav:hover ~ main {
+  transform: translateX(+100px);
+  transition: 0.4s;
+}
+
+nav:hover ~ .navButton {
+  padding-left: 0px;
+}
+
+#menuLine {
+  width: 35px;
+  height: 5px;
+  margin-top: 5px;
+  background: black;
+  border-radius: 5px;
+}
+
+.mainLogo {
+  filter: drop-shadow(0px 0px 35px black);
+}
+
+.block {
+  background:#ededed;
+  width: 95%;
+  height: auto;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  padding-top: 15px;
+  padding-bottom: 125px;
+}
+
+.block h2 {
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.places {
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+
+.tequadoPlace a {
+  position: relative;
+  text-decoration: none;
+  color:white;
+  background: linear-gradient(to right, #eb4034, #b33027);
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 26px;
+  z-index: 5;
+  filter: drop-shadow(0px 0px 15px black);
+}
+
+
+
+.itemAvatar {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  border-radius: 1000px;
+  margin-bottom: 10px;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+#backgroundGradientRed {
+  position: absolute;
+  width: 60%;
+  z-index: 1;
+  transform: translate(-33%, -15%);
+  transition: 0.5s;
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+#backgroundGradientRed:hover {
+  transform: translate(-30%, -15%);
+  transition: 0.5s
+}
+
+#backgroundGradientRed:hover ~ .itemAvatar {
+  transform: translateX(+20%);
+  transition: 0.5s;
+}
+
+.ytPlace a {
+  position: relative;
+  text-decoration: none;
+  color:white;
+  background: linear-gradient(to right, #2758b4, #34d3eb);
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 26px;
+  z-index: 5;
+  filter: drop-shadow(0px 0px 15px black);
+}
+
+#backgroundGradientBlue {
+  position: absolute;
+  width: 60%;
+  z-index: 1;
+  transform: translate(-35%, -15%);
+  transition: 0.5s;
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+#backgroundGradientBlue:hover {
+  transform: translate(-38%, -15%);
+}
+
+#backgroundGradientBlue:hover ~ .itemAvatar {
+  transform: translate(-20%);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1360px) {
+  /*main {
+      transform: translateX(0px);
+  }*/
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1a21;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#myVideo {
+  /*width: 100%;
+  height: auto;
+  position: absolute;*/
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
