@@ -33,7 +33,6 @@ main {
   color: black;
   background: white;
   z-index: 1;
-  /*transform: translateX(-3%);*/
   padding-right: 3%;
   overflow-x: hidden;
   transition: 0.5s;
