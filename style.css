@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  background: #232323;
 }
 
 nav {
@@ -40,6 +41,8 @@ main {
   right: 0px;
   text-align: center;
   height: 100%;
+  /*background-image: url("http://www.baltana.com/files/wallpapers-10/White-Abstract-Shape-Wallpaper-28555.jpg");*/
+  background-image: linear-gradient(to right, #232323, #525252);
 }
 
 main h1 {
@@ -118,6 +121,7 @@ nav:hover ~ .navButton {
   border-radius: 15px;
   padding-top: 15px;
   padding-bottom: 125px;
+  background-image: linear-gradient(deg(45), #D0D0D0, #FFFFFF);
 }
 
 .block h2 {
